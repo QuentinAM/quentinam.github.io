@@ -11,6 +11,8 @@ input, button, textarea, select { font: inherit }
 
 /* ================= ENDS ================ */
 
+body { background-color: antiquewhite }
+
 /* Desktops */
 @media (min-width: 768px) { body { padding: 4% 20% } }
 	
@@ -19,6 +21,7 @@ input, button, textarea, select { font: inherit }
 
 h1
 {
+    color: brown;
     font-size: 72px;
     margin-bottom: 56px;
     text-align: center;
@@ -28,6 +31,7 @@ h1
 
 h2
 {
+    color: brown;
     font-size: 30px;
     margin-bottom: 64px;
     font-family: sans-serif;
@@ -35,6 +39,11 @@ h2
     line-height: 1.4;
     text-transform: uppercase;
     font-weight: normal;
+}
+
+h3
+{
+    color: brown;
 }
 
 p
