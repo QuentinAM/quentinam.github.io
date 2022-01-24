@@ -26,7 +26,7 @@ body {
 /* Main heading */
 h1 {
     font-family: serif;    
-    font-size: 84px;
+    font-size: calc(48px + (84 - 48) * ((100vw - 320px) / (1600 - 320)));  
     line-height: 1.1;
     font-weight: normal;
     color: #3434B0;
@@ -38,7 +38,7 @@ h1 {
 /* Small headings */
 h2 {
     font-family: serif;    
-    font-size: 26px;
+    font-size: calc(18px + (26 - 18) * ((100vw - 320px) / (1600 - 320)));  
     color:#3434B0;
     line-height: 1.5;
     margin-bottom: 42px;
@@ -47,7 +47,7 @@ h2 {
 /* Smaller headings */
 h3 {
     font-family: serif;    
-    font-size: 42px;
+    font-size: calc(32px + (38 - 32) * ((100vw - 320px) / (1600 - 320)));  
     color: #000;
     letter-spacing:-1px;
     margin-top: 40px;
@@ -65,7 +65,7 @@ img
 /* Text paragraphs */
 p {
     font-family: serif;
-    font-size: 22px;
+    font-size: calc(16px + (21 - 16) * ((100vw - 320px) / (1600 - 320)));  
     color: #455C80;
     line-height: 1.6;
     margin-top: 0;
