@@ -30,6 +30,9 @@
 
     <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css" />
 
+    <!-- JS -->
+    <script src="assets/js/index.js"></script>
+
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-HMQZ3BNGD5"></script>
         <script>
@@ -52,13 +55,13 @@
     <header class="hero-block text-center-desktop text-center-mobile">
 
         <div class="hero-text-container" class="title">
-            <h1 class="text-shadow fade-in">Quentin Abel Marceau</h1>
-            <h2 class="text-shadow fade-in">Front-End developer</h2>
+            <h1 class="text-shadow fade-in focus-in-expand-fwd">Quentin Abel Marceau</h1>
+            <h2 class="text-shadow fade-in focus-in-expand-fwd-bis">Front-End developer</h2>
         </div>
     
         <div class="container-btn">
-            <a href="portfolio/index.html" class="btn btn-primary btn-rounded"><i class="fas fa-arrow-right"></i></i><span>Portfolio</span></a>
-            <a href="contact/index.html" class="btn btn-secondary btn-rounded"><i class="fas fa-arrow-right"></i><span>Contact</span></a>
+            <a onclick="return go_to_page('portfolio/index.html', 1000);" href="#" class="btn btn-primary btn-rounded bounce-top"><i class="fas fa-briefcase"></i><span>Portfolio</span></a>
+            <a onclick="return go_to_page('contact/index.html', 1000);" href="#" class="btn btn-secondary btn-rounded hidden second-btn"><i class="far fa-address-card"></i><span>Contact</span></a>
         </div>
         
         <div class="hero-bg-media">
@@ -73,10 +76,25 @@
     <!-- main content with sections -->
     <main>
         
+        <section class="container-flex theme-two col-shadows corners-soft">
+            <div class="col-1 text-center">
+                <h2>Front-End exercises</h2>
+                <h3>This website is part of my semester abroad at Dorset College in Dublin.</h3>
+            </div>
+            <div class="col-2 shadow-pop-tr">
+                <h3>Exercises <i class="fas fa-file-code"></i></h3><p>Here are my front-end exercises.</p>
+                <a href="exercises.html" class="btn btn-secondary btn-rounded">See more</a>
+            </div>
+            <div class="col-2 shadow-pop-tr">
+                <h3>Javascript <i class="fab fa-js-square"></i></h3><p>You'll find here all my javascript exercises.</p>
+                <a href="javascript/exercises/index.html" class="btn btn-secondary btn-rounded">See more</a>
+            </div>
+        </section>
+
         <section class="container-flex theme-one text-center col-shadows corners-soft img-border img-corners-soft">
             <div class="col-1 text-center">
                 <h2>Recent projects</h2>
-                <h3>Below you can see some examples of my recent work. Check out my complete portfolio.</h3>
+                <h3>Below you can see some examples of my recent work. Check out my complete <a style="color: lightcyan;" href="portfolio/index.html">portfolio</a>.</h3>
                 <br></br>
                 <h3>Have a project you would like to discuss? Let's make something great together!</h3>
             </div>
@@ -84,25 +102,25 @@
                 <figure><img src="assets/img/project-van-gogh.png" alt="project-van-gogh"></figure>
                 <h3>Vincent Van Gogh</h3>
                 <p>A summary of the life and work of Dutch artist Vincent van Gogh with an embeded video from YouTube.</p>
-                <a href="portfolio/van-gogh/index.html">See more</a>
+                <a href="portfolio/van-gogh/index.html" class="btn btn-secondary btn-rounded">See more</a>
             </div>
             <div class="col-4">
                 <figure><img src="assets/img/project-smoothie.jpg" alt="project-smoothie"></figure>
                 <h3>Smooth Smoothies</h3>
                 <p>A multi-column, flexbox-based page layout and hero image with a tinted overlay.</p>
-                <a href="portfolio/smoothies/index.html">See more</a>
+                <a href="portfolio/smoothies/index.html" class="btn btn-secondary btn-rounded">See more</a>
             </div>
             <div class="col-4">
                 <figure><img src="assets/img/project-fashion.jpg" alt="project-fashion"></figure>
                 <h3>Snazzy Fashion</h3>
                 <p>A web page for a fashion retailer with a background video that plays in a continuous loop.</p>
-                <a href="portfolio/fashion/index.html">See more</a>
+                <a href="portfolio/fashion/index.html" class="btn btn-secondary btn-rounded">See more</a>
             </div>
             <div class="col-4">
                 <figure><img src="assets/img/website-logo.png" alt="website-logo"></figure>
                 <h3>Crypto Wallet</h3>
                 <p>A sample web page for a crpto wallet service.</p>
-                <a href="portfolio/crypto-wallet/index.html">See more</a>
+                <a href="portfolio/crypto-wallet/index.html" class="btn btn-secondary btn-rounded">See more</a>
             </div>
         </section>
 
@@ -125,7 +143,7 @@
 
 		<ul class="footer-icons">
 			<li><a href="https://www.linkedin.com/in/quentin-abel-marceau-996054215/" target="_blank"><i class="fab fa-linkedin"></i></a></li>
-			<li><a href="https://github.com/" target="_blank"><i class="fab fa-github-square"></i></a></li>
+			<li><a href="https://github.com/QuentinAM" target="_blank"><i class="fab fa-github-square"></i></a></li>
 			<li><a href="https://www.instagram.com/quentin_abm/?hl=en" target="_blank"><i class="fab fa-instagram-square"></i></a></li>
 		</ul>
 
