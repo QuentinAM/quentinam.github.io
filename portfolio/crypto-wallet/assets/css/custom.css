@@ -180,3 +180,7 @@ footer ul.footer-icons li a:visited i { color: var(--white-000) }
 .theme-five .col-4 p { color: var(--white-000) }
 .theme-five .col-4 li { color: var(--white-000) }
 .theme-five .col-4 figure.icon { color: var(--cyan-500) }
+
+h1, h2, h3, p{
+    font-family: 'Merriweather', serif;
+}

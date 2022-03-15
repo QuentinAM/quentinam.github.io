@@ -160,3 +160,6 @@ body { font-family: 'Playfair Display', serif, var(--global-font); }
 .theme-four .col-4 li { color: var(--white-000) }
 .theme-four .col-4 figure.icon { color: var(--white-000) }
 
+h1, h2, h3, p{
+    font-family: 'Merriweather', serif;
+}

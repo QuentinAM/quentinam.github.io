@@ -226,7 +226,14 @@
         // select value and buttons
         const value = document.querySelector("#value");
         const btns = document.querySelectorAll(".btn");
-      
+
+        // Increase by 1 when click on increase button
+        // Decrease by 1 when click on decrease button
+        // Reset to 0 when click on reset button
+        // When under 0 turn color red
+        // When over 0 turn color green
+        // When is 0 turn color black
+
         btns.forEach(btn => {
             btn.addEventListener("click", e => {
                 if (e.target.classList.contains("increase")) {
