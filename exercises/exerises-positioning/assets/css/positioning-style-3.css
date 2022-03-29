@@ -16,7 +16,7 @@ section *:last-child, footer *:last-child { margin-bottom: 0 !important }
 
 /* ================= ENDS ================ */
 
-.container-text{
+.container-text {
     position: absolute;
     padding: 20px;
     display: inline-block;
@@ -50,9 +50,9 @@ img {
     width: auto; height: auto;
 }
 
-.top-left       { top: 10%; left: 10% }
-.bottom-left    { bottom: 10%; left: 10% }
-.top-right      { top: 10%; right: 10% }
+.top-left       { top: 10%; left: 10%; }
+.bottom-left    { bottom: 10%; left: 10%; }
+.top-right      { top: 10%; right: 10%; }
 .bottom-right   { bottom: 10%; right: 10%; }
 .center-center  { left: 50%; top: 50%; transform: translate(-50%, -50%); }
 
