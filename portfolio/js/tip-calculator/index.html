@@ -117,32 +117,67 @@
     <!-- header hero block -->
     <header class="hero-block hero-block-js">
         <div class="hero-text-container">
-            <h1>Image Slideshow <span>JavaScript Project</span></h1>
-            <h2>A slideshow based on an array of images of Dublin city, Ireland. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
+            <h1>Tips calculator<span>JavaScript Project</span></h1>
+            <h2>Tips calculator. View my complete collection of <a href="../index.html">JavaScript projects</a>.</h2>
         </div>
     </header>
 
     <!-- main content with sections -->
     <main>
         
-        <section class="container-flex theme-js">
+        <div class="theme-js">
 
-            <div class="container-slider">
-                <div class="container-outer">
-                    <div class="container-img">
+            <section>
+                <div class="bg-gray">
+                    <form>
+                    <p>How much was your bill?
                     
-                    <a class="btn btn-left"><i class="fas fa-caret-left"></i></a>
-                    <a class="btn btn-right"><i class="fas fa-caret-right"></i></a>
-                    
-                    </div>
-                </div>
+                        € <input id="billAmount" type="text" placeholder="Bill Amount"></p>
+                
+                        <p>How was your service? <select id="serviceQuality">
+                            <option disabled selected value="0">-- Choose an Option --</option>
+                            <option value="0.3">30&#37; &#45; Outstanding</option>
+                            <option value="0.2">20&#37; &#45; Good</option>
+                            <option value="0.15">15&#37; &#45; It was OK</option>
+                            <option value="0.1">10&#37; &#45; Bad</option>
+                            <option value="0.05">5&#37; &#45; Terrible</option>
+                        </select></p>
+                
+                    </form>
+    
+                    <p>How many people are sharing the bill?
+                    <input id="numOfPeople" type="text" placeholder="Number of People" maxlength="
+                    4" style="width: 32px"> people</p>
+    
+                    <button type="button" class="btn" id="calculate"> <i class="fa-solid fa-calculator"></i>Calculate Tip</button>
             </div>
-
-        </section>
-
+            <!--calculator end-->
+            
+            <!--totalTip -->
+            <div id="tipDisplayBox" class="bg-lightblue">
+                <p>Total tip: €<span id="tipTotal"></span></p>
+                <p>Tip each: <b>€<span id="tipEach"></span></b></p>
+            </div>
+            
+            </section>
+        </div>
     </main>
 
     <script>
+        // Add a tip based on how much people will pay it and the service quality
+        function calculateTip() {
+            let billAmount = document.getElementById("billAmount").value;
+            let serviceQuality = document.getElementById("serviceQuality").value;
+            let numOfPeople = document.getElementById("numOfPeople").value;
+
+            let totalTip = billAmount * serviceQuality;
+            let tipEach = totalTip / numOfPeople;
+            document.getElementById("tipTotal").innerHTML = totalTip.toFixed(2);
+            document.getElementById("tipEach").innerHTML = tipEach.toFixed(2);
+        }
+
+        // Add event listener to calculate button
+        document.getElementById("calculate").addEventListener("click", calculateTip);
 
     </script>
 
